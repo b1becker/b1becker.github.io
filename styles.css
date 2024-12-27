@@ -207,14 +207,13 @@ display: table;
   /* get an image of yourself in here */
   background: #000000;
   /* if you have image in folder then add ../ */
-  background-image: url('images/meonmountain.jpg');
+  background-image: url('images/HeadShot.jpeg');
 
-  background-position: center;
-
+  background-position: top;
 
   background-size: cover;
   padding: 450px 0;
-  height: 1000px;
+  height: 0px;
 }
 .hero__container{
   display: flex;
@@ -226,7 +225,7 @@ display: table;
   height: 90%;
   text-align: center;
   padding: 30px;
-  margin-top: 10rem;
+  margin-top: 20rem;
 }
 
 .image__of__brian{
@@ -235,9 +234,9 @@ display: table;
 }
 .intro__text{
   font-size: 60px;
-  margin-bottom: 24px;
-  color: #fff;
-  
+  margin-bottom: 0px;
+  margin-left: 0px;
+  color: #131313;
 }
 
 
@@ -255,7 +254,8 @@ display: table;
   align-items: center;
   max-width: 1200px;
   margin: 0 auto;
-  height: 90%;
+  height: 50%;
+  padding: 2rem;
   text-align: center;
   padding: 30px;
 }
@@ -282,6 +282,15 @@ display: table;
   margin-top: 0px;
 }
 
+.contact__btns {
+  display: flex;
+  justify-content: center; /* Centers the buttons horizontally */
+  gap: 20px; /* Adds space between the buttons */
+  height: 100px;
+  box-sizing: border-box;
+  
+}
+
 .contact__btn {
   font-size: 1.8rem;
   background: #833ab4;
@@ -306,6 +315,7 @@ display: table;
   z-index: 2;
   color: #fff;
   text-decoration: none;
+  
 }
 
 .contact__btn:after {
@@ -339,13 +349,23 @@ background: #131313;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100%;
+  height: 50%;
   padding: 30px 0;
 }
-.about__container{
-color: #fff;
-padding: 5rem ;
 
+.about__container{
+  color: #fff;
+  padding: 2rem ;
+}
+
+.about__content{
+  
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 50%;
+  max-width: 1200px;
+  
 }
 
 .robot__image{
@@ -373,6 +393,7 @@ padding: 10rem 0;
 }
 
 .portfolio h3 {
+padding: 5rem 0;
 background-color: #00d2ff;
 background-image: linear-gradient(to right, #3a7bd5, #00d2ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
@@ -387,14 +408,14 @@ font-size: 2.5rem;
 
 .portfolio__container {
 display: grid;
-grid-template-columns: 1fr 1fr 1fr 1fr;
+grid-template-columns: 1fr 1fr;
 grid-template-rows: 1fr;
 }
 
 .portfolio__box {
 margin: 10px;
 height: 500px;
-width: 450px;
+width: 600px;
 border-radius: 4px;
 display: flex;
 flex-direction: column;
@@ -467,15 +488,23 @@ cursor: pointer;
 }
 
 @media screen and (max-width: 1500px) {
-.portfolio__container {
+  .portfolio__box {
+    height: 500px;
+    width: 450px;
+  }
+
+  .portfolio__container {
+  
   grid-template-columns: 1fr 1fr;
 }
 }
 
 @media screen and (max-width: 800px) {
-.portfolio__container {
-  grid-template-columns: 1fr;
-}
+  .portfolio__container {
+    grid-template-columns: 1fr;
+    
+  }
+  
 }
 
 /* Footer CSS */
