@@ -1,15 +1,28 @@
+html, body {
+  background: none;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #fff; /* Set a solid color background */
+}
+
 *{
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   /* Change the font */
-  font-family: 'Kumbh Sans',  sans-serif;
+  font-family: 'Georgia', serif;
+  /* font-family: 'Kumbh Sans',  sans-serif; */
   scroll-behavior: smooth;
+  
 }
 
 
 .navbar {
-  background: #131313;
+  background: #fff;
+  opacity: 1;
   height: 60px;
   display: flex;
   justify-content: center;
@@ -57,16 +70,15 @@
   display: flex;
   align-items: center;
   list-style: none;
-
-
 }
 
 .navbar__item{
+  
   height: 60px;
 }
 
 .navbar__links{
-  color: #fff;
+  color: #131313;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -135,7 +147,7 @@
 
 
 .navbar__menu.active{
-  background: #131313;
+  background: #fff;
   top: 100%;
   opacity: 1;
   transition: all .5s ease;
@@ -155,7 +167,7 @@
   height: 3px;
   margin: 5px auto;
   transition: all .3s ease-in-out;
-  background: #fff;
+  background: #131313;
   
 }
 
@@ -164,6 +176,7 @@
 }
 
 .navbar__links {
+background-color: #131313;
 text-align: center;
 padding: 2rem;
 width: 100%;
@@ -232,22 +245,29 @@ display: table;
   display: flex;
   
 }
+
+
+
 .intro__text{
-  font-size: 60px;
-  margin-bottom: 0px;
-  margin-left: 0px;
-  color: #131313;
+  padding: 20px;
+  background-color: #131313;
+  border-radius: 10px;
+  font-size: 40px;
+  
+  color: #fff;
+
 }
 
 
 .profile {
   
-  background: #131313;
+  background: #fff;
   
   /* to be changed once we figure out the text */
   /* padding: 150px 0; */
 }
 .about__container{
+  
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -258,6 +278,10 @@ display: table;
   padding: 2rem;
   text-align: center;
   padding: 30px;
+}
+
+.about__bts {
+  color: #000;
 }
 
 .profile__title{
@@ -277,7 +301,7 @@ display: table;
 .profile__description{
   font-size: 1rem;
   font-family:Verdana, Geneva, Tahoma, sans-serif;
-  color:#fff;
+  color:#131313;
   text-align: center;
   margin-top: 0px;
 }
@@ -344,7 +368,7 @@ display: table;
 
 
 .about__me{
-background: #131313;
+background: #fff;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -383,7 +407,7 @@ justify-content: center;
 
 /* Services Section */
 .portfolio__wrapper {
-background: #131313;
+background: #fff;
 display: flex;
 flex-direction: column;
 justify-content: center;
@@ -393,7 +417,7 @@ padding: 10rem 0;
 }
 
 .portfolio h3 {
-padding: 5rem 0;
+padding: 3rem 0;
 background-color: #00d2ff;
 background-image: linear-gradient(to right, #3a7bd5, #00d2ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
@@ -421,8 +445,7 @@ display: flex;
 flex-direction: column;
 justify-content: center;
 color: #fff;
-background-color: #00d2ff;
-background-image: linear-gradient(to right, #3a7bd5, #00d2ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+background-color: #89CFF0;
 
 transition: 0.3s ease-in;
 text-align: center;
@@ -439,16 +462,14 @@ height: 90%;
 }
 .portfolio__box:nth-child(2) {
 background: #76b852;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #8DC26F, #76b852);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #8DC26F, #76b852); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
 }
 
 .portfolio__box:nth-child(3) {
-background: #DA22FF;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #9733EE, #DA22FF);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #9733EE, #DA22FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #76b852;  /* fallback for old browsers */
+}
 
+.portfolio__box:nth-child(6) {
+  background: #76b852;  /* fallback for old browsers */
 }
 
 /* .services__card h2 {
