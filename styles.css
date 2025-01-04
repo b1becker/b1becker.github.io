@@ -21,7 +21,7 @@ body {
 
 
 .navbar {
-  background: #fff;
+  background: #131313;
   opacity: 1;
   height: 60px;
   display: flex;
@@ -78,7 +78,7 @@ body {
 }
 
 .navbar__links{
-  color: #131313;
+  color: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
